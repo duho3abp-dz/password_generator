@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 70%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.window {
+    border: 1px solid #000000;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.symbols {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding-left: 5px;
+    border: 1px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.generate {
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
