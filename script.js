@@ -22,8 +22,12 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             if (+symbols.value > 0 && +symbols.value <= 30) {
                 result.textContent = Generator(+symbols.value);
-            } else {
+            } else if (+symbols.value > 30) {
                 result.textContent = '...oops, you want a lot of symbols!';
+            } else if (+symbols.value <= 0) {
+                result.textContent = '...oops, you want too few symbols!';
+            } else {
+                result.textContent = '...oops, something went wrong!';
             }
         }, 0);
     });
